@@ -1,3 +1,6 @@
+FROM scratch
+
+
 #set maintainer
 LABEL maintainer "helloworld"
 
