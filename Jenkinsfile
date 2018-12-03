@@ -6,11 +6,11 @@ pipeline {
   }
   agent any
   stages {
-    stage(‘Clone repository’) {
+ /*   stage(‘Clone repository’) {
       checkout scm
         
       
-    }
+    }*/
     stage(‘Build image’) {
       steps{
         script {
