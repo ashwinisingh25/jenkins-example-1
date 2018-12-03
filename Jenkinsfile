@@ -6,12 +6,12 @@ pipeline {
   }
   agent any
   stages {
-    stage(‘Cloning Git’) {
-      steps {
-        git ‘https://github.com/ashwinisingh25/jenkins-example-1.git'
-      }
+    stage(‘Clone repository’) {
+      checkout scm
+        
+      
     }
-    stage(‘Building image’) {
+    stage(‘Build image’) {
       steps{
         script {
           dockerImage = docker.build registry + “:$BUILD_NUMBER”
